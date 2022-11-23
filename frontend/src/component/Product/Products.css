@@ -1,0 +1,171 @@
+.productHeading {
+  margin: 2vmax auto;
+  width: 25vw;
+  background-color: rgba(193, 110, 21, 0.345);
+  font: 600 3vmax "Roboto";
+  text-align: center;
+  border-bottom-right-radius: 100%;
+  border-top-left-radius: 100%;
+  text-shadow: 4px 3px white;
+  width: 100%;
+  padding: 0.1vmax;
+}
+
+.keywordHeading {
+  margin: auto;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.2vmax "Roboto";
+  text-align: center;
+}
+
+.searchHeading {
+  margin: auto;
+  color: rgba(0, 0, 0, 0.467);
+  font: 500 1vmax "Roboto";
+  text-align: center;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 5vmax;
+  min-height: 50vh;
+}
+
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  margin: 6vmax;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.page-link {
+  text-decoration: none;
+  font: 300 1vmax "Roboto";
+  color: rgb(78, 4, 4);
+  transition: all 0.3s;
+}
+
+.page-item:hover {
+  background-color: wheat;
+}
+
+.page-item:hover .page-link {
+  color: white;
+}
+
+.pageItemActive {
+  background-color: tomato;
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.filterBox {
+  width: 11vmax;
+  position: absolute;
+  top: 10vmax;
+  left: 3vmax;
+}
+.resetFilterBtn {
+  width: 11vmax;
+  border: none;
+  background-color: tomato;
+  font: 400 1.2vmax "Franklin Gothic Medium";
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s;
+  border-radius: 2px;
+}
+.resetFilterBtn:hover {
+  cursor: pointer;
+  background-color: rgba(187, 7, 7, 0.796);
+}
+
+.categoryBox {
+  padding: 0%;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(187, 7, 7, 0.796);
+  font: 400 1vmax "Franklin Gothic Medium";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.category-link-active {
+  list-style: none;
+  color: tomato;
+  font: 400 1.2vmax "Franklin Gothic Medium";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  transform: translateX(1vmax);
+}
+.category-link:hover {
+  color: tomato;
+  font: 400 1.2vmax "Franklin Gothic Medium";
+  transform: translateX(1vmax);
+}
+
+.filterBox > fieldset {
+  border: none;
+  padding: 1vmax;
+  border-radius: 70%;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+}
+
+.filterBox > fieldset > legend {
+  font: 1.2vmax "Franklin Gothic Medium";
+  color: rgb(235, 147, 30);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .productHeading {
+    font: 600 3vmax "Roboto";
+    width: 60vw;
+    text-shadow: 1px 2px white;
+  }
+  .filterBox {
+    width: 20vmax;
+    position: static;
+    margin: auto;
+  }
+  .resetFilterBtn {
+    width: 20vmax;
+    font: 400 1.5vmax "Roboto";
+  }
+  .page-link {
+    font: 300 1.7vmax "Franklin Gothic Medium";
+  }
+  .category-link {
+    font: 400 1.8vmax "Franklin Gothic Medium";
+  }
+}

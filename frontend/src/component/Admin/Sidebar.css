@@ -1,0 +1,64 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+  background: #ece9e6;
+  height: 100%;
+  width: 18vmax;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+}
+
+.sidebar > a > img {
+  width: 100%;
+  transition: all 0.5s;
+  border-bottom-right-radius: 50%;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0 0 10px tomato);
+}
+
+.sidebar > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.632);
+  font: 300 1rem "Roboto";
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.productsA {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 300 1rem "Roboto";
+  padding: 1rem;
+  transition: all 0.5s;
+}
+
+.sidebar > a:hover {
+  color: tomato;
+  transform: scale(1.1);
+}
+
+.sidebar > a > p {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar > a > p > svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}
+
+@media screen and (max-width: 600px) {
+  .sidebar {
+    width: unset;
+    height: 60vh;
+  }
+}

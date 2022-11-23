@@ -1,0 +1,94 @@
+.aboutSection {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  position: fixed;
+  cursor: url("../../../images/cursor.png"),auto;
+}
+
+.temp1 {
+  background-color: aqua;
+}
+.aboutSectionGradient {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(78, 81, 255),
+    rgb(74, 137, 189)
+  );
+}
+
+.aboutSectionContainer {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  left: 50%;
+  top: 50%;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.aboutSectionContainer > h1 {
+  font: 5vmax "";
+  color: rgb(205, 138, 126);
+  border-bottom: 1px solid rgb(205, 138, 126);
+}
+
+.aboutSectionContainer > div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+}
+.secondSpan{
+    color:white;
+}
+
+.ghAnchor > svg {
+  font-size: 6vmax;
+  margin: 1vmax 0;
+  color: white;
+  animation: rotater 1.5s linear infinite;
+}
+
+
+@keyframes rotater {
+  to {
+    transform: rotate3d(360deg);
+    color: rgb(14, 15, 14);
+  }
+}
+
+.aboutSectionContainer > div > div > span {
+  font-style: italic;
+  color: rgb(106, 8, 106);
+  text-align: center;
+  width: 80%;
+}
+
+.aboutSectionContainer2 {
+  border-top: 1px solid rgba(0, 0, 0, 0.116);
+}
+.aboutSectionContainer2 > a {
+  text-decoration: none;
+  font-style: oblique;
+  color: rgb(106, 8, 106);
+  display: flex;
+  align-items: center;
+  padding: 0.1rem;
+}
+.aboutSectionContainer2 > a > svg {
+  font-size: 3vmax;
+}
+
+.aboutSectionContainer2 > a:hover {
+  color: white;
+  background-color: brown;
+}

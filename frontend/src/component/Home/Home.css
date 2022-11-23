@@ -1,0 +1,194 @@
+.banner {
+  background-image: linear-gradient(to right, #635dc0, #3207ae);
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.banner > h1 {
+  margin: 5vmax;
+  font: 600 2.5vmax "Roboto";
+}
+
+.banner > p {
+  position: absolute;
+  font: 300 2vmax "Audiowide";
+  color: white;
+  top: 36vh;
+  transform: translateX(-100%);
+  animation: bannerAnim 2s forwards;
+}
+
+@keyframes bannerAnim {
+  to {
+    transform: rotateX(0deg);
+    color: tomato;
+  }
+}
+
+.banner > svg {
+  color: #635dc0;
+  position: absolute;
+  height: 40vh;
+  width: 62vw;
+  opacity: 0.3;
+  top: 3.5vh;
+  padding: 0;
+}
+
+.banner > a > button {
+  margin-bottom: 0vmax;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+  z-index: 10;
+}
+
+.banner > a > button:hover {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+}
+
+.banner::after {
+  content: "";
+  width: 100vw;
+  height: 100.2vmin;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  max-width: 100%;
+  clip-path: polygon(100% 100%, 100% 100%, 50% 83%, 0 100%);
+}
+
+.homeHeading {
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 1.4vmax;
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 5vmax auto;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  margin: 2vmax auto;
+  width: 80vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  background-color: rgba(207, 204, 204, 0.162);
+}
+
+.productCard {
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+}
+
+.productCard > img {
+  width: 14vmax;
+}
+.productCard > div {
+  margin: 0.5vmax;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.productCard > div > span {
+  margin-top: 0.5vmax;
+  margin-right: 0.5vmax;
+  font: 300 1vmax "Roboto";
+}
+
+.productCard > p {
+  font-family: "Roboto";
+  font-size: 1.2vmax;
+  margin: 1vmax 0.5vmax;
+  margin-bottom: 0;
+}
+
+.productCard > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow";
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+  transform: translateY(-1vmax);
+  background-color: rgba(207, 204, 204, 0.412);
+}
+
+.allProductsBtn {
+  margin: auto;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+.allProductsBtn > a > button {
+  cursor: pointer;
+  background-color: tomato;
+  border: none;
+  border-radius: 2px;
+  padding: 1vmax;
+  transition: all 0.5s;
+  width: 9vmax;
+  font: 500 1vmax "Roboto";
+  color: white;
+}
+.allProductsBtn > a > button:hover {
+  background-color: rgb(232, 67, 38);
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .productCard > p {
+    font-size: 1.7vmax;
+  }
+  .productCard > div {
+    margin: 0vmax;
+    display: block;
+  }
+  .banner > p {
+    font: 300 2vmax "Audiowide";
+    top: 15vh;
+  }
+  .banner > svg {
+    display: none;
+  }
+  .container {
+    border-radius: 0%;
+    background-color: #ffffff;
+  }
+
+  .productCard > span {
+    font-size: 1.5vmax;
+  }
+  .productCard > div > span {
+    margin: 0 0 0.5vmax;
+    font: 300 1vmax "Roboto";
+  }
+  .allProductsBtn {
+    margin: 0vmax auto;
+    width: 5vmax;
+  }
+}

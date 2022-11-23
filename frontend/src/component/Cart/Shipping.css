@@ -1,0 +1,118 @@
+.shippingContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shippingBox {
+  background-color: rgba(0, 128, 128, 0.136);
+  width: 30vw;
+  height: 70vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 1vmax;
+}
+
+.shippingHeading {
+  text-align: center;
+  color: teal;
+  font: 400 1.3vmax "Roboto";
+  padding: 1.3vmax;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+  width: 50%;
+  margin: auto;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 2vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  transition: all 0.5s;
+}
+.shippingForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 2px;
+}
+
+.shippingForm > div > input,
+.shippingForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+
+.shippingForm > div > input:focus,
+.shippingForm > div > select:focus{
+    border: 1px solid teal;
+}
+
+.shippingForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: teal;
+}
+.shippingBtn {
+  border: none;
+  background-color: tomato;
+  color: white;
+  font: 300 1vmax "Roboto";
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  outline: none;
+  margin: 2vmax;
+  border-radius: 0.5vmax;
+}
+.shippingBtn:hover {
+  background-color: rgb(179, 66, 46);
+}
+
+@media screen and (max-width: 600px) {
+  .shippingBox {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .shippingHeading {
+    font: 400 6vw "Roboto";
+    padding: 3vw;
+  }
+
+  .shippingForm {
+    padding: 4vw;
+  }
+
+  .shippingForm > div > input,
+  .shippingForm > div > select {
+    padding: 3vw 10vw;
+    font: 300 3vw cursive;
+  }
+
+  .shippingForm > div > svg {
+    font-size: 6vw;
+    transform: translateX(3vw);
+  }
+
+  .shippingBtn {
+    font: 300 3vw "Roboto";
+    padding: 3vw;
+  }
+}

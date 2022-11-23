@@ -1,0 +1,53 @@
+.updateOrderForm {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  height: 50vh;
+  background-color: rgb(227, 240, 240);
+}
+
+.updateOrderForm > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(26, 114, 114, 0.037);
+  height: 100%;
+}
+
+.updateOrderForm > form > h1 {
+  color: teal;
+}
+
+.updateOrderForm > form > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.updateOrderForm > form > div > select {
+  padding: 1vmax 4vmax;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+.updateOrderForm > form > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6vmax;
+  color: teal;
+}
+
+@media screen and (max-width: 600px) {
+  .updateOrderForm > form > div > select {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .updateOrderForm > form > div > svg {
+    font-size: 2.8vmax;
+  }
+}

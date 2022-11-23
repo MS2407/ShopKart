@@ -1,0 +1,52 @@
+.contactContainer {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(34, 33, 33);
+  position: fixed;
+  cursor: url("../../../images/cursor.png"),auto;
+}
+
+.emailBlock {
+  text-decoration: none;
+  transform: translateX(-100vw);
+  animation: mailBtnAnimation 2s forwards;
+}
+
+@keyframes colorChange {
+  to {
+    color: rgb(226, 27, 27);
+  }
+}
+
+.emailBlock > h1 {
+  font: 4vmax "Roboto";
+  color: tomato;
+  animation: colorChange 1.5s infinite;
+}
+
+.contactContainer > h4 {
+  font-style: italic;
+  color: white;
+}
+.contactContainer > h2 {
+  color: white;
+}
+.svgIcon > svg {
+  color: white;
+  transition: all 0.5s;
+  padding: 1vmax;
+}
+.svgIcon > svg:hover {
+  cursor: pointer;
+  transform: scale(2);
+}
+@keyframes mailBtnAnimation {
+  to {
+    transform: translateX(0);
+  }
+}
