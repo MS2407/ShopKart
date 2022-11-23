@@ -1,5 +1,5 @@
-SHOPKART
-Fully Functional MERN Stack Ecommerce Website with the following Features
+SHOPKART:
+Fully Functional MERN Stack Ecommerce Website with the following features -
 1. LOGIN / SIGNUP / FORGOT PASSWORD
 2. ADD TO CART / ADD REVIEWS
 3. FILTER PRODUCTS BASED ON Category, Price and Ratings
