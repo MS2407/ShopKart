@@ -8,6 +8,7 @@ import Loader from "../layout/Loader/Loader";
 import { toast } from "react-toastify";
 import MetaData from "../layout/MetaData";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -48,7 +49,6 @@ const Home = () => {
                 Scroll <CgMouse />
               </button>
             </a>
-        
           </div>
           <h2 className="homeHeading">Featured Products</h2>
 
@@ -59,13 +59,12 @@ const Home = () => {
               ))}
           </div>
           <div className="allProductsBtn">
-          <a href="/products">
+            <Link to="/products" href="/products">
               <button>
                 View All <CgMouse />
               </button>
-            </a>
+            </Link>
           </div>
-        
         </Fragment>
       )}
     </Fragment>

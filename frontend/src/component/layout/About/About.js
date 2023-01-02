@@ -16,7 +16,7 @@ const About = () => {
           <div>
             <div>
               <Avatar
-                src="https://res.cloudinary.com/duu22a3yk/image/upload/v1668608654/avatars/rzkga8ksyalztsthycvq.jpg"
+                src="https://res.cloudinary.com/duu22a3yk/image/upload/v1669146959/avatars/shrcxl7i5uho6c6u6ak6.jpg"
                 alt="MS98"
               />
               <h2>MS98</h2>

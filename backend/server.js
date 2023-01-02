@@ -26,8 +26,8 @@ const server = app.listen(process.env.PORT, () => {
   console.log(`Server is Working on http://localhost:${process.env.PORT}`);
 });
 
-//Handling Unhandled Promise Rejection (wring mongoDB URI)
-process.on("uncaughtException", (err) => {
+//Handling Unhandled Promise Rejection (wrong mongoDB URI)
+process.on("unhandledRejection", (err) => {
   console.log(`Error: ${err.message}`);
   console.log("Shutting Down the server due to Unhandled Promise Rejection");
 

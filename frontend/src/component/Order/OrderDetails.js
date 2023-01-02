@@ -35,7 +35,7 @@ const OrderDetails = () => {
 
   return (
     <Fragment>
-      {loading ? (
+      {loading  || !order? (
         <Loader />
       ) : (
         <Fragment>
@@ -54,13 +54,13 @@ const OrderDetails = () => {
                 <div>
                   <p>Phone:</p>
                   <span>
-                    {order.shippingInfo && order.shippingInfo.phoneNo}
+                    {order && order.shippingInfo && order.shippingInfo.phoneNo}
                   </span>
                 </div>
                 <div>
                   <p>Address:</p>
                   <span>
-                    {order.shippingInfo &&
+                    {order && order.shippingInfo &&
                       `${order.shippingInfo.address}, ${order.shippingInfo.city}, ${order.shippingInfo.state}, ${order.shippingInfo.pinCode}, ${order.shippingInfo.country}`}
                   </span>
                 </div>

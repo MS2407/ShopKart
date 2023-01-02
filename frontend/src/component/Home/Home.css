@@ -92,6 +92,7 @@
 }
 
 .productCard {
+  height: 25vmax;
   width: 14vmax;
   display: flex;
   flex-direction: column;
@@ -100,10 +101,17 @@
   margin: 2vmax;
   transition: all 0.5s;
   padding-bottom: 0.5vmax;
+  overflow: hidden;
 }
 
-.productCard > img {
+.imageCard {
+  height: 70%;
   width: 14vmax;
+  background-size: cover;
+}
+.imageCard > img {
+  width: 13vmax;
+  height: 100%;
 }
 .productCard > div {
   margin: 0.5vmax;
@@ -179,12 +187,17 @@
     border-radius: 0%;
     background-color: #ffffff;
   }
+  .imageCard {
+    height: 57%;
+  }
+  .productCard {
+    height: 26vmax;
+  }
 
   .productCard > span {
     font-size: 1.5vmax;
   }
   .productCard > div > span {
-    margin: 0 0 0.5vmax;
     font: 300 1vmax "Roboto";
   }
   .allProductsBtn {

@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Rating } from "@mui/material";
+import "../Home/Home.css";
 
 const ProductCard = ({ product }) => {
   const options = {
@@ -11,7 +12,9 @@ const ProductCard = ({ product }) => {
 
   return (
     <NavLink className="productCard" to={`/product/${product._id}`}>
-      <img src={product.images[0].url} alt="product"></img>
+      <div className="imageCard">
+        <img src={product.images[0].url} alt="product"></img>
+      </div>
       <p>{product.name}</p>
       <div>
         <Rating {...options} />

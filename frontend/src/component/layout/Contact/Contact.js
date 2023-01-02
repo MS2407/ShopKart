@@ -11,7 +11,7 @@ const Contact = () => {
         <h4>For any queries:</h4>
         <h2>Mail us</h2>
         <a className="emailBlock" href="emailto:mexcellshar@gmail.com">
-          <h1>mexcellshar@gmail.com</h1>
+          <h1>mukulkrieshna@gmail.com</h1>
         </a>
 
         <a className="svgIcon" href="https://github.com/MS2407">
